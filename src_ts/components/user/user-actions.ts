@@ -10,10 +10,7 @@ export function getCurrentUser() {
     endpoint: {url: getEndpoint(etoolsEndpoints.userProfile).url}
   })
     .then((response: EtoolsUser) => {
-      if (redirectToPMPIfNeccessary(response)) {
-        return;
-      }
-      store.dispatch(updateUserData(response));
+        store.dispatch(updateUserData(response));
       return response;
     })
     .catch((error: AnyObject) => {
