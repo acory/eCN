@@ -1,0 +1,11 @@
+node_modules/
+build/
+bower_components/
+.tmp
+.idea
+*.sublime-project
+*.sublime-workspace
+src/
+
+.vscode/
+rollup/
